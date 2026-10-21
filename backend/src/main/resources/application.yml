@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: sipboard-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/sipboard}
+    username: ${DB_USER:sipboard}
+    password: ${DB_PASSWORD:sipboard}
+  jpa:
+    # Flyway owns the schema; Hibernate only checks that entities match it.
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
