@@ -2,7 +2,7 @@ spring:
   application:
     name: sipboard-api
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/sipboard}
+    url: ${DB_URL:jdbc:postgresql://localhost:5434/sipboard}
     username: ${DB_USER:sipboard}
     password: ${DB_PASSWORD:sipboard}
   jpa:
