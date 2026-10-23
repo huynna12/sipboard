@@ -1,7 +1,5 @@
 # SipBoard
 
-Find cafés that fit what you need right now (study, work, chill), see what your friends think, and keep a memory board of the places you've been.
-
 - **Backend:** Java 21, Spring Boot 4.1, PostgreSQL + PostGIS, Redis, Flyway
 - **App:** Expo (React Native, TypeScript), coming in a later step
 - **Plan:** [docs/plan.md](docs/plan.md) · **This week:** [docs/week-1.md](docs/week-1.md)
